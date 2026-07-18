@@ -1,0 +1,7 @@
+main.d
+main.o
+newer
+*.user
+build/
+
+
