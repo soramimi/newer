@@ -43,6 +43,10 @@ clean:
 run:
 	./$(NAME)
 
+.PHONY: test
+test: $(NAME)
+	@bash tests/test.sh ./$(NAME)
+
 .PHONY: install
 install:
 	install -m 755 $(NAME) ~/.local/bin/
